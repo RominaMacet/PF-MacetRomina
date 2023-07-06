@@ -1,0 +1,132 @@
+/*Estilos*/
+
+footer {
+    width: 100%;
+    height: auto;
+    border-top: 5px solid white;
+    .footer--borderBottom {
+        border-bottom: 5px solid white;
+        .flechaGoUp {
+            display: flex;
+            justify-content: flex-end;
+            padding: 10px;
+            margin-right: 50px;
+            i {
+                color: #E6B811;
+                font-size: 40px;
+                padding-top: 20px;  
+                &:hover {
+                    transform:scale(1.2);
+                }
+            }
+        } 
+        .footer__megamenu {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 50px;
+            .megamenu {
+                li {
+                    padding: 5px;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        font-size: 18px;
+                        text-transform: uppercase;
+                        &:hover {
+                            color: #E6B811;
+                        }
+                        &:focus {
+                            color: #463805;
+                        }
+                    }
+                }
+            }
+            .logoFooter {
+                img {
+                    width: 200px;
+                    height: 150px;
+                    border-radius: 50%;
+                    margin-top: -20px;
+                    margin-left: -20px;
+                    &:hover {
+                        transform: scale(1.1);
+                        box-shadow: 0.3em 0 0.7em #E6B811;
+                    }
+                }
+            }
+        }
+    }
+    .footer__copyright {
+        display: flex;
+        justify-content: center;
+        padding: 20px;
+        h6 {
+            color: white;
+        }
+    }
+}
+
+
+/* MEDIA QUERY */
+
+/* Vista Mobile */
+
+@media only screen and (max-width:425px) {
+    footer {
+        padding-top: 20px;
+        .footer--borderBottom {
+            .flechaGoUp {
+               display: none;
+            }
+            .footer__megamenu {
+                .megamenu {
+                    li {
+                        padding: 5px;
+                        a {
+                            font-size: 12px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .logoFooter  {
+                    img {
+                        width: 60px;
+                        height: 50px;
+                        border-radius: 50%;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+ /* Vista Tablet */
+
+ @media only screen and (max-width:992px) and (min-width: 426px){
+    footer {
+        padding-top: 50px;
+        .footer--borderBottom {
+            .flechaGoUp {
+               display: none;
+            }
+            .footer__megamenu {
+                .megamenu {
+                    li {
+                        padding: 5px;
+                    }
+                }
+                .logoFooter {
+                    img {
+                        width: 200px;
+                        height: 150px;
+                        border-radius: 50%;
+                        margin-top: 5px;
+                        margin-right: -50px;
+                    }
+                }
+            }
+        }
+    }
+ }

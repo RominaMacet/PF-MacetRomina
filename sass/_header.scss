@@ -1,0 +1,283 @@
+/*Mixins*/
+
+@mixin botonesHeader {
+    border: 2px solid #E6B811;
+    background-color: #E6B811;
+    color: black;
+    padding: 10px;
+    border-radius: 15px;
+    &:hover {
+        background-color: #2F67BD;  
+        color: white;
+        border: 2px solid #2F67BD;
+        box-shadow: 0.1em 0 0.5em rgb(65, 54, 54);
+        transform: scale(1.1);
+        transition: 0.2s;
+    }
+    &:focus {
+        background-color: #102D53;
+        color: white;
+        border: 2px solid #102D53;
+    }
+    &:active {
+        background-color: #102D53;
+        color: white;
+        border: 2px solid #102D53;
+    }
+}
+
+
+/*Animaciones*/
+@keyframes logoBackNForth {
+    from {
+        transform: translateX(-35vw);
+        
+      }
+      to {
+        transform: translateX(38vw);
+      }
+}
+
+@keyframes parpadeo {  
+    0% { opacity: 3.0; }
+    50% { opacity: 0.1; }
+    100% { opacity: 3.0; }
+  }
+
+
+/*Estilos*/
+.header--grid {
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    align-items: baseline;
+    background-color: black;
+    border-bottom: 2px solid white;
+    max-width: 100%;
+    nav {
+        .dropdown {
+            .nav__btn--color {
+                margin-left: 10px;
+                margin-right: 10px;
+                @include botonesHeader;
+            }
+            .nav__menu--color {
+                background-color: #102D53 !important ;
+                border-radius: 15px !important ;
+                li {
+                    list-style: none;
+                    a {
+                        color: white;
+                        text-decoration: none;
+                        text-align:left;
+                        display: block;
+                        padding: 10px;
+                        text-transform: uppercase;
+                        font-weight: bold;
+                        font-size: 14px;
+                        text-align: center;
+                        &:hover {
+                            background-color: #97CCF7;
+                            color: black;
+                            border-radius: 5px;
+                        }
+                        &:active {
+                            color: #102D53;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .header__centro {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 40px 10px 10px 10px;
+        height: 100%;
+        justify-content: center;
+        margin-left: -60px;
+        margin-right: -170px;
+        .parpadeo {
+            animation-name: parpadeo;
+            animation-duration: 3.5s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            .header__logo {
+                width: 250px;
+                height: 150px;
+                border-radius: 60%;
+                margin-bottom: 50px;
+                margin-top: -20px;
+                animation:  15s linear 0s infinite alternate logoBackNForth;
+                box-shadow:
+                    inset 0 0 60px whitesmoke,
+                    inset 20px 0 80px #f0f,
+                    inset -20px 0 80px #0ff,
+                    inset 20px 0 300px #f0f,
+                    inset -20px 0 300px #0ff,
+                    0 0 50px #fff,
+                    -10px 0 80px #f0f,
+                    10px 0 80px #0ff;
+            }
+        }
+        .header__enunciado {
+            color: white;
+            font-size: 40px;
+            font-weight: bolder;
+            margin-top: -20px;
+            margin-bottom: 20px;
+        }
+        .navResponsive {
+            display: none;
+        }
+    }
+    .div__headerBtnAcc  {
+        margin-right: -70px;
+    .header__btnsAccesorios {
+        align-items: center;
+        display: flex;
+        flex-wrap: nowrap;
+        column-gap: 10px;
+        li {
+            list-style: none;
+            text-align: center;
+            font-weight: bold;
+            @include botonesHeader;
+            &:hover a {
+                color: white;
+            }
+            a {
+                color: black;
+                font-size: 16px;
+                list-style: none;
+                text-decoration: none;
+                display: flex; 
+                i {
+                    padding-right: 5px;
+                }
+            }
+        }
+    }
+  }
+}
+
+/* Media Query*/
+
+/* VISTA MOBILE 425px */
+@media only screen and (max-width:425px) {
+    .header--grid {
+        .responsiveDisplayNone {
+          display: none;
+        }
+        .header__centro {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            margin: 0 50px;
+            align-content: center !important;
+            width: 150px;
+            .parpadeo {
+                .header__logo {
+                    width: 200px;
+                    height: 150px;
+                    margin-bottom: 50px;
+                    margin-top: -20px;
+                    animation:  5s linear 0s infinite alternate logoBackNForth425;
+                }
+            }
+            .header__enunciado {
+                font-size: 30px;
+                text-align: center;
+                padding: 20px;
+            }
+            .navResponsive {
+                display: inline-block;
+                display: flex;
+                margin-right: 80px;
+                justify-content: space-between;
+                align-items: center;
+                .div__headerBtnAcc {
+                    .header__btnsAccesorios {
+                        li {
+                            padding: 10px 7.5px;
+                            a {
+                                margin: 0;
+                                padding: 0;
+                                i {
+                                    text-align: center;
+                                    left: 5px;
+                                    position: relative;
+                                }
+                                p {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Animaciones V. Mobile*/
+@keyframes logoBackNForth425 {
+    from {
+        transform: translateX(-12vw);
+        
+      }
+      to {
+        transform: translateX(14vw);
+      }
+}
+
+
+/* VISTA TABLET 992px*/
+
+@media only screen and (max-width:992px) and (min-width: 426px) {
+    .header--grid {
+        .header__centro {
+            .parpadeo {
+                .header__logo {
+                    animation:  5s linear 0s infinite alternate logoBackNForth992;
+                }
+            }
+            .header__enunciado {
+                margin-top: -25px;
+                margin-left: -80px;
+            }
+        }
+        .div__headerBtnAcc {
+            .header__btnsAccesorios {
+                li {
+                    a {
+                        i {
+                            position: relative;
+                            right: -4px;
+                        }
+                        p {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/*Animaciones V. Tablet*/
+@keyframes logoBackNForth992 {
+    from {
+        transform: translateX(-16vw);
+        
+      }
+      to {
+        transform: translateX(12vw);
+      }
+}
+
+
+

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../multimedia/favicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Ysabeau:wght@500&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../sass/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <meta name="keywords" content="café, submarino, chocolate, bombones, comida">
+    <meta name="description" content="Sitio web de cafetería">
+    <title>Contacto</title>
+</head>
+<body class="animate__animated animate__fadeIn">
+    <div id="div__grid">
+        <header class="header--grid">
+            <nav class="responsiveDisplayNone">
+                <div class="dropdown">
+                    <button class=" nav__btn--color" data-bs-theme="dark" type="button"  data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list"></i>
+                    </button>
+                    <ul class="dropdown-menu nav__menu--color bg-black">
+                        <li><a rel="noopener" href="../index.html" >Home</a></li>
+                        <li><a rel="noopener" href="./menu.html">Menú</a></li>
+                        <li><a rel="noopener" href="./shop.html">Shop</a></li>
+                        <li><a rel="noopener" href="aboutus.html">About us</a></li>
+                        <li><a rel="noopener" href="./contacto.html#ubi">Ubicación</a></li>
+                        <li><a rel="noopener" href="./contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
+            <div class="header__centro" id="goUp">
+                <a href= "../index.html" class="parpadeo"><img src="../multimedia/logo-el-nautilus.png" alt="Logo de empresa" class="header__logo"></a> 
+                <h1 class="header__enunciado">Cafetería & Chocolatería</h1>
+                <div class="navResponsive">
+                    <nav>
+                        <div class="dropdown">
+                            <button class=" nav__btn--color" data-bs-theme="dark" type="button"  data-bs-toggle="dropdown" aria-expanded="false"><i class="bi bi-list"></i>
+                            </button>
+                            <ul class="dropdown-menu nav__menu--color bg-black">
+                                <li><a rel="noopener" href="../index.html" >Home</a></li>
+                                <li><a rel="noopener" href="./menu.html">Menú</a></li>
+                                <li><a rel="noopener" href="./shop.html">Shop</a></li>
+                                <li><a rel="noopener" href="aboutus.html">About us</a></li>
+                                <li><a rel="noopener" href="./contacto.html#ubi">Ubicación</a></li>
+                                <li><a rel="noopener" href="./contacto.html">Contacto</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <div class="div__headerBtnAcc">
+                        <ul class="header__btnsAccesorios" >
+                            <li><a href="#"><i class="bi bi-search-heart-fill"></i><p>Buscar</p></a></li>
+                            <li><a href="./shop.html"><i class="bi bi-bag-heart-fill"></i><p>Shop</p></a></li>
+                            <li><a href="#"><i class="bi bi-person-heart"></i><p>Log in</p></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="div__headerBtnAcc responsiveDisplayNone">
+                <ul class="header__btnsAccesorios" >
+                    <li><a href="#"><i class="bi bi-search-heart-fill"></i><p>Buscar</p></a></li>
+                    <li><a href="./shop.html"><i class="bi bi-bag-heart-fill"></i><p>Shop</p></a></li>
+                    <li><a href="#"><i class="bi bi-person-heart"></i><p>Log in</p></a></li>
+                </ul>
+            </div>
+        </header>
+        
+        <main class="main--grid mainContacto__bgrn" >
+            <section class="section1Contacto animate__animated animate__fadeInLeft"> 
+                <img src="../multimedia/contact2.jpg" alt="El Nautilus">
+                <div class="contacto__enlaces--ubicación">
+                    <h3>Contacto</h3>
+                    <a href="https://web.whatsapp.com/" target="_blank"><p class="whatsapp"><i class="bi bi-whatsapp"></i>15-2100-0000</p></a>
+                    <a href="http://facebook.com" target="_blank"><p class="facebook"><i class="bi bi-facebook"></i>"El Nautilus" Facebook</p></a>
+                    <a href="http://instagram.com" target="_blank"><p class="instagram"> <i class="bi bi-instagram"></i>"El Nautilus" Instagram</p></a>
+                </div>
+            </section>
+            
+            <section class="section2Contacto animate__animated animate__fadeInRight">
+                <div class="section2Contacto__div">
+                    <h3>Get in touch</h3>
+                    <form  class="formContacto" action="" method="get" enctype="text/plain" >
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="" id="nombre" placeholder="Ingrese su nombre" required>
+                        <label for="email">Email</label>
+                        <input type="email" name="" id="email" placeholder="Ingrese su email" required>
+                        <label for="paises">Países</label>
+                        <select name="" id="paises">
+                            <option value="" disabled>Elija su país</option>
+                            <option value="arg">Argentina</option>
+                            <option value="chi" selected>Chile</option>
+                            <option value="bol">Bolivia</option>
+                            <option value="mex">México</option>            
+                        </select>
+                        <label for="comentario">Comentario</label>
+                        <textarea name="" id="comentario" cols="30" rows="10" placeholder="Escriba su comentario"></textarea>
+                        <div class="termYnews">
+                            <div><input type="checkbox" name="" id="1">Términos y condiciones</div>
+                            <div><input type="checkbox" name="" id="2">Newsletter</div>
+                        </div>
+                        <div class="botonesForm">
+                            <input type="submit" value="Enviar">
+                            <input type="reset" value="Borrar todo">
+                            <input type="button" value="Para JS">
+                        </div>
+                    </form>
+                </div>
+                <img src="../multimedia/contact4.jpg" alt="El Nautilus">
+            </section>
+        
+            <section class="section3Contacto animate__animated animate__fadeInLeft">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3005.034572764975!2d-71.30820312324661!3d-41.13377123097948!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7a602a6e32f3%3A0x6398c06fae24cc07!2sMamuschka!5e0!3m2!1ses-419!2sar!4v1683618722398!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div class="textoSection3Contacto">
+                    <h3 id="ubi">Ubicación</h3>
+                    <p>Nuestra cafetería y chocolatería se encuentra estratégicamente ubicada en el centro de la ciudad de San Carlos de Bariloche (provincia de Rio Negro, Argentina)  en la calle Chocolate, número 123, a sólo unos pasos del centro cívico. Sumérgete en un ambiente encantador mientras disfrutas de nuestros deliciosos chocolates y exquisitas bebidas ¡Ven y descubre el sabor de la fantasía en "El Nautilus" de Bariloche!</p>
+                </div>
+            </section>
+            
+            <div class="divFlecha">
+                <a href="#goUp" class="flechaGoUpResponsive"><i class="bi bi-arrow-up-circle-fill"></i></a>
+            </div> 
+        </main>
+        
+        <footer class="footer--grid">
+            <div class="footer--borderBottom">
+                <a href="#goUp" class="flechaGoUp"><i class="bi bi-arrow-up-circle-fill"></i></a>
+                <div class="footer__megamenu">
+                    <ul class="megamenu">
+                        <li><a href="#">Buscar</a></li>
+                        <li><a href="./aboutus.html">About</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">Terms of service</a></li>
+                        <li><a href="#">Refund policy</a></li>      
+                    </ul>
+                    
+                    <ul class="megamenu">
+                        <li><a href="#">R.R. H.H.</a></li>
+                        <li><a href="#">Ayuda</a></li>
+                        <li><a href="#">Gift cards</a></li>
+                        <li><a href="#">Shipping & delivery</a></li>   
+                    </ul>
+                    
+                    <a href="../index.html" class="logoFooter"><img src="../multimedia/logo-el-nautilus.png" alt="Logo de empresa"></a>
+                </div>
+            </div>
+            <div class="footer__copyright">
+                <h6>&copy; 2023, El Nautilus Coffee Arg. All rights reserved.</h6>
+            </div>
+        </footer>  
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</body>
+</html>

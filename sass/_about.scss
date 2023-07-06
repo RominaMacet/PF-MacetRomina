@@ -1,0 +1,302 @@
+/*Mixins*/
+@mixin imgAbout {
+    border: 3px solid #000000;
+    border-radius: 30px;
+    box-shadow: 0.1em 0 0.5em black;
+    filter: contrast(1.1);
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.5s;
+        box-shadow: 0.1em 0 0.9em black;
+    }
+}
+
+
+/*Estilos*/
+
+.mainAbout__bgn {
+    position: relative;
+    &::before{
+    background-image: url(../multimedia/1.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: brightness(60%);
+    }
+    .contenedorVideoAbout {
+        position: relative;
+        background-color: black;
+        padding: 20px;
+        .videoAbout {
+            position: relative;
+            z-index: 0;
+            border-radius: 100px;
+            width: 100%;
+            height: 100%;
+        }
+        .textoSobreVideoAboutUs {
+            position:absolute;
+            top:40%;
+            left:33%;
+            z-index:1;
+            h2 {
+                color: black;
+                font-size: 100px;
+                text-align: center;
+                text-transform: uppercase;
+                text-shadow: 5px 5px 1px #E6B811;
+            }
+        }
+    }
+    div {
+        .divAbout__P {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: baseline;
+            margin: 100px;
+            .divAbout__Parr {
+                width: 34%;
+                margin: 20px;
+                p {
+                    text-align:center;
+                    color: white;
+                    font-size: 28px;
+                    font-style: italic;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+        }
+        .divAbout__fotoYtexto1 {
+            display: flex;
+            place-content: space-around center;
+            margin-bottom: 40px;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            img {
+                width: 350px;
+                height: 400px;
+                @include imgAbout;
+            }
+            p {
+                width: 400px;
+                text-align: justify;
+                color: white;
+                font-size: 18px;
+                position: relative;
+                z-index: 1;
+                background-color: black;
+                height: fit-content;
+                padding: 20px;
+                border-radius: 30px;
+                box-shadow: 0.1em 0 0.9em black;
+            }
+        }
+        .divAbout__fotoYtexto2 {
+            display: flex;
+            justify-content: space-evenly;
+            margin-bottom: 80px;
+            padding-top: 80px;
+            .bgnTextoAboutSegImg {
+                width: 350px;
+                text-align: justify;
+                color: white;
+                font-size: 18px;
+                height: fit-content;
+                padding: 20px;
+                border-radius: 30px;
+                box-shadow: 0.1em 0 0.9em black;
+                background-color: black;
+                position: relative;
+                z-index: 1;
+
+                h4 {
+                    font-weight: bold;
+                    font-size:19 px ;
+                    text-transform: uppercase;
+                    padding-bottom: 5px;
+                    color: #E6B811;
+                    position: relative;
+                    z-index: 1;
+                }
+                p {
+                    overflow: auto;
+                    height: 400px;
+                    position: relative;
+                    z-index: 1;
+                }
+            }
+            .fotoYtexto {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                img {
+                    width: 400px;
+                    height: 400px;
+                    @include imgAbout;
+                }
+                .textSobreFotoDeAbuelo {
+                    box-shadow: 0.1em 0 0.9em black;
+                    background-color: black;
+                    width: 300px;
+                    padding: 20px;
+                    color: #E6B811;
+                    text-align: center;
+                    height: fit-content;
+                    border-radius: 20px;
+                    margin-top: -50px;
+                    position: relative;
+                    z-index: 1;
+                    &:hover {
+                            transform: scale(1.1);
+                            transition: 0.5s;
+                    }
+                }
+            }
+        }
+    }
+    .divFlecha {
+        .flechaGoUpResponsive {
+            display: none;
+        }
+    }
+}
+
+
+/* MEDIA QUERY */
+
+/* VISTA MOBILE 425px */
+
+@media only screen and (max-width:425px) {
+    .mainAbout__bgn {
+        width: 100vw;
+        overflow: hidden;
+        .contenedorVideoAbout {
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            .videoAbout {
+                width:100%;
+                padding: 0;
+                height: fit-content;
+                margin: 0 auto ;
+            }
+            .textoSobreVideoAboutUs {
+                h2 {
+                    font-size: 30px;
+                }
+            }
+        }
+        div {
+            .divAbout__P {
+                .divAbout__Parr {
+                    width: 200px;
+                    margin: auto;
+                    p {
+                        font-size: 20px;
+                    }
+                }
+            }
+            .divAbout__fotoYtexto1 {
+                display: flex;
+                flex-direction: column;
+                width: 320px;
+                margin: 0 auto;
+                img {
+                    width: 270px;
+                    height: 300px;
+                }
+                p {
+                    width: 300px;
+                    margin-top: 20px;
+                }
+            }
+            .divAbout__fotoYtexto2 {
+                display: flex;
+                flex-direction: column-reverse;
+                .bgnTextoAboutSegImg {
+                    width: 300px;
+                    z-index: 1;
+                    margin: 20px auto 0 auto;
+                    p {
+                        overflow: auto;
+                        height: 400px;
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+                .fotoYtexto {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    img {
+                        width: 270px;
+                        height: 300px;
+                    }
+                    .textSobreFotoDeAbuelo {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+        .divFlecha {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            z-index: 1;
+            .flechaGoUpResponsive {
+                display: block;
+                padding: 10px;
+                margin-right: 30px;
+                margin-top: -40px;
+                margin-bottom: 15px;
+                i {
+                    color: #E6B811;
+                    font-size: 40px;
+                    padding-top: 20px;  
+                }
+            }
+        }
+    }
+}
+
+
+/* VISTA TABLET 992px*/
+
+@media only screen and (max-width:992px) and (min-width: 426px) {
+    .mainAbout__bgn {
+        overflow: hidden;
+        .contenedorVideoAbout {
+            .textoSobreVideoAboutUs {
+                h2 {
+                    margin-left: -65px;
+                }
+            }
+        }
+        .divFlecha {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            z-index: 1;
+            .flechaGoUpResponsive {
+                display: block;
+                padding: 10px;
+                margin-right: 30px;
+                margin-bottom: 50px;
+                i {
+                    color: #E6B811;
+                    font-size: 40px;
+                    padding-top: 20px;  
+                }
+            }
+        }
+    }
+ }
