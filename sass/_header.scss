@@ -60,6 +60,7 @@
                 margin-left: 10px;
                 margin-right: 10px;
                 @include botonesHeader;
+                padding: 10px 12px;
             }
             .nav__menu--color {
                 background-color: #102D53 !important ;
@@ -202,13 +203,13 @@
                 .div__headerBtnAcc {
                     .header__btnsAccesorios {
                         li {
-                            padding: 10px 7.5px;
+                            padding: 10px ;
                             a {
                                 margin: 0;
                                 padding: 0;
                                 i {
                                     text-align: center;
-                                    left: 5px;
+                                    left: 4px;
                                     position: relative;
                                 }
                                 p {
