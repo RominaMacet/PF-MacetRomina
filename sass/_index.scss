@@ -274,7 +274,7 @@
 }
 
 
-@media (min-width:425px) and (max-width:767px) {
+@media (min-width:425px) and (max-width:799px)  {
     .main__index--bgn {
         overflow: hidden;
         .videoIndex {
@@ -345,8 +345,13 @@
     }
 }
 
-/* VISTA TABLET 992px*/
-@media (min-width: 768px) and (max-width:992px) {
+/* VISTA TABLET 768x, 800px*/
+
+@media (min-width: 768px) and (max-width:799px) {
+
+}
+
+@media (min-width: 800px) and (max-width:1023px) {
     .main__index--bgn {
         .videoIndex {
             video {
