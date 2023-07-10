@@ -481,6 +481,7 @@ footer .footer__copyright h6 {
     width: 100px;
     height: auto;
     margin-top: auto;
+    margin-left: 10px;
   }
 }
 @media (min-width: 425px) and (max-width: 767px) {
