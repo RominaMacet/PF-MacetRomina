@@ -349,7 +349,96 @@
 /* VISTA TABLET 768px, 992px*/
 
 @media (min-width: 768px) and (max-width:799px) {
-
+    .mainAbout__bgn {
+        width: 100vw;
+        overflow: hidden;
+        .contenedorVideoAbout {
+            width: 100%;
+            display: flex;
+            margin: 0 auto;
+            .videoAbout {
+                width:100%;
+                padding: 0;
+                height: fit-content;
+            }
+            .textoSobreVideoAboutUs {
+                h2 {
+                    font-size: 65px;
+                    margin: auto;
+                    margin-left: -20px;
+                }
+            }
+        }
+        div {
+            .divAbout__P {
+                .divAbout__Parr {
+                    width: 250px;
+                    margin: auto;
+                    p {
+                        font-size: 25px;
+                    }
+                }
+            }
+            .divAbout__fotoYtexto1 {
+                display: flex;
+                margin: 0 auto;
+                img {
+                    width: 300px;
+                    height: auto;
+                }
+                p {
+                    width: 300px;
+                    margin-top: 20px;
+                }
+            }
+            .divAbout__fotoYtexto2 {
+                display: flex;
+                .bgnTextoAboutSegImg {
+                    width: 300px;
+                    z-index: 1;
+                    margin: auto;
+                    margin-right: -20px;
+                    p {
+                        overflow: auto;
+                        height: 400px;
+                        position: relative;
+                        z-index: 1;
+                    }
+                }
+                .fotoYtexto {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    margin: auto;
+                    img {
+                        width: 270px;
+                        height: 300px;
+                    }
+                    .textSobreFotoDeAbuelo {
+                        width: 300px;
+                    }
+                }
+            }
+        }
+        .divFlecha {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            z-index: 1;
+            .flechaGoUpResponsive {
+                display: block;
+                padding: 10px;
+                margin-right: 30px;
+                margin-top: -40px;
+                margin-bottom: 15px;
+                i {
+                    color: #E6B811;
+                    font-size: 40px;
+                    padding-top: 20px;  
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) and (max-width:1023px){

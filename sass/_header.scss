@@ -334,7 +334,7 @@
                     height: 150px;
                     margin-bottom: 20px;
                     margin-top: 10px;
-                    animation:  5s linear 0s infinite alternate logoBackNForth425;
+                    animation:  5s linear 0s infinite alternate logoBackNForth768;
                 }
             }
             .header__enunciado {
@@ -373,6 +373,16 @@
     }
 }
 
+/*Animaciones V. Tablet 768px*/
+@keyframes logoBackNForth768 {
+    from {
+        transform: translateX(-13vw);
+        
+      }
+      to {
+        transform: translateX(15vw);
+      }
+}
 
 @media (min-width: 992px) and (max-width:1023px) {
     .header--grid {

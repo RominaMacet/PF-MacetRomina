@@ -195,31 +195,88 @@
                 .merchEspacioBottom {
                     margin-bottom: 50px;
                 }
-            }
-            .divFlecha{
-                display: flex;
-                justify-content: flex-end;
-                .flechaGoUpResponsive {
-                    display: block;
-                    padding: 10px;
-                    margin-right: 30px;
-                    margin-top: -40px;
-                    margin-bottom: 15px;
-                    i {
-                        color: #E6B811;
-                        font-size: 40px;
-                        padding-top: 20px;  
-                    }
+        }
+        .divFlecha{
+            display: flex;
+            justify-content: flex-end;
+            .flechaGoUpResponsive {
+                display: block;
+                padding: 10px;
+                margin-right: 30px;
+                margin-top: -40px;
+                margin-bottom: 15px;
+                i {
+                    color: #E6B811;
+                    font-size: 40px;
+                    padding-top: 20px;  
                 }
             }
         }
     }
+}
 
     
 /* VISTA TABLET 768px, 992px*/
 
 @media (min-width: 768px) and (max-width:799px) {
-
+    .mainShop--bgn {
+        overflow: hidden;
+        .div__mainTitulo {
+            width: 100px;
+            display: flex;
+            margin: auto;
+            h2 {
+                padding: 10px 300px;
+            }
+        }
+        .dropdown {
+            margin: auto 20px;
+        } 
+        div {
+            div {
+                .div__mainTitulosChicos {
+                    h3 {
+                        padding: 10px 150px;
+                    }
+                }
+                .flexCards {
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    width: 500px;
+                    margin: auto;
+                    .card {
+                        margin-bottom: 30px;
+                        width: 200px;
+                        margin: 20px;
+                        
+                    }
+                }
+                .mBCResp {
+                    margin-bottom: -15px;
+                }
+            }
+                .merchEspacioBottom {
+                    margin-bottom: 50px;
+                }
+        }
+        .divFlecha{
+            display: flex;
+            justify-content: flex-end;
+            .flechaGoUpResponsive {
+                display: block;
+                padding: 10px;
+                margin-right: 30px;
+                margin-top: -40px;
+                margin-bottom: 15px;
+                i {
+                    color: #E6B811;
+                    font-size: 40px;
+                    padding-top: 20px;  
+                }
+            }
+        }
+    }
 }
 
 @media (min-width: 992px) and (max-width:1023px){

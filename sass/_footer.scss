@@ -136,8 +136,35 @@ footer {
 /* VISTA TABLET 768px, 992px*/
 
 @media (min-width: 768px) and (max-width:799px) {
-
+    footer {
+        padding-top: 20px;
+        .footer--borderBottom {
+            .flechaGoUp {
+               display: none;
+            }
+            .footer__megamenu {
+                .megamenu {
+                    li {
+                        padding: 5px;
+                        a {
+                            font-size: 15px;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                .logoFooter  {
+                    img {
+                        width: 140px;
+                        height: 130px;
+                        border-radius: 50%;
+                        margin-top: 15px;
+                    }
+                }
+            }
+        }
+    }
 }
+
 
 @media (min-width: 992px) and (max-width:1023px){
     footer {
