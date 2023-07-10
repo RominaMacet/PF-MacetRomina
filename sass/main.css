@@ -374,7 +374,7 @@ header, body {
     transform: translateX(14vw);
   }
 }
-/* VISTA TABLET 768x, 800px*/
+/* VISTA TABLET 768px, 992px*/
 @media (min-width: 768px) and (max-width: 799px) {
   .header--grid .responsiveDisplayNone {
     display: none;
@@ -425,7 +425,7 @@ header, body {
     display: none;
   }
 }
-@media (min-width: 800px) and (max-width: 1023px) {
+@media (min-width: 992px) and (max-width: 1023px) {
   .header--grid .header__centro .parpadeo .header__logo {
     animation: 5s linear 0s infinite alternate logoBackNForth992;
   }
@@ -556,8 +556,8 @@ footer .footer__copyright h6 {
     margin-top: 15px;
   }
 }
-/* VISTA TABLET 768x, 800px*/
-@media (min-width: 800px) and (max-width: 1023px) {
+/* VISTA TABLET 768px, 992px*/
+@media (min-width: 992px) and (max-width: 1023px) {
   footer {
     padding-top: 50px;
   }
@@ -810,7 +810,7 @@ footer .footer__copyright h6 {
     color: #E6B811;
   }
 }
-@media (min-width: 425px) and (max-width: 799px) {
+@media (max-width: 425px) {
   .main__index--bgn {
     overflow: hidden;
   }
@@ -872,8 +872,8 @@ footer .footer__copyright h6 {
     padding-top: 20px;
   }
 }
-/* VISTA TABLET 768x, 800px*/
-@media (min-width: 800px) and (max-width: 1023px) {
+/* VISTA TABLET 768px, 992px*/
+@media (min-width: 992px) and (max-width: 1023px) {
   .main__index--bgn .videoIndex video {
     height: 100%;
   }
@@ -1131,8 +1131,8 @@ footer .footer__copyright h6 {
     padding-top: 20px;
   }
 }
-/* VISTA TABLET 768x, 800px*/
-@media (min-width: 800px) and (max-width: 1023px) {
+/* VISTA TABLET 768px, 992px*/
+@media (min-width: 992px) and (max-width: 1023px) {
   .main__menu--bgn {
     overflow: hidden;
   }
@@ -1425,8 +1425,8 @@ footer .footer__copyright h6 {
     padding-top: 20px;
   }
 }
-/* VISTA TABLET 768x, 800px*/
-@media (min-width: 800px) and (max-width: 1023px) {
+/* VISTA TABLET 768px, 992px*/
+@media (min-width: 992px) and (max-width: 1023px) {
   .mainShop--bgn {
     overflow: hidden;
   }
@@ -1802,8 +1802,8 @@ footer .footer__copyright h6 {
     padding-top: 20px;
   }
 }
-/* VISTA TABLET 768x, 800px*/
-@media (min-width: 800px) and (max-width: 1023px) {
+/* VISTA TABLET 768px, 992px*/
+@media (min-width: 992px) and (max-width: 1023px) {
   .mainAbout__bgn {
     overflow: hidden;
   }
@@ -2155,8 +2155,8 @@ footer .footer__copyright h6 {
     padding-top: 20px;
   }
 }
-/* VISTA TABLET 768x, 800px*/
-@media (min-width: 800px) and (max-width: 1023px) {
+/* VISTA TABLET 768px, 992px*/
+@media (min-width: 992px) and (max-width: 1023px) {
   .mainContacto__bgrn {
     overflow: hidden;
   }
