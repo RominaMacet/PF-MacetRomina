@@ -495,12 +495,12 @@ footer .footer__copyright h6 {
     padding: 5px;
   }
   footer .footer--borderBottom .footer__megamenu .megamenu li a {
-    font-size: 12px;
+    font-size: 15px;
     text-transform: uppercase;
   }
   footer .footer--borderBottom .footer__megamenu .logoFooter img {
-    width: 60px;
-    height: 50px;
+    width: 100px;
+    height: 70px;
     border-radius: 50%;
     margin-top: 15px;
   }
