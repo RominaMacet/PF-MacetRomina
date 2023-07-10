@@ -173,9 +173,86 @@
 
 /* MEDIA QUERY */
 
-/* VISTA MOBILE 425px */
+/* VISTA MOBILE 320px, 425px */
 
-@media only screen and (max-width:425px) {
+@media (min-width:320px) and (max-width:424px) {
+    .mainAbout__bgn {
+        overflow: hidden;
+        .contenedorVideoAbout {
+            .textoSobreVideoAboutUs {
+                margin: auto;
+                h2 {
+                    font-size: 30px;
+                    position: relative;
+                    left: -20px;
+                    
+                }
+            }
+        }
+        div {
+            .divAbout__P {
+                .divAbout__Parr {
+                    width: 250px;
+                    margin: auto;
+                    p {
+                        font-size: 20px;
+                        height: auto;
+                    }
+                }
+            }
+            .divAbout__fotoYtexto1 {
+                display: flex;
+                flex-direction: column;
+                width: auto;
+                img {
+                    width: auto;
+                }
+                p {
+                    width: 240px;
+                    height: 300px;
+                    overflow: auto;
+                    margin-top: 10px;
+                }
+            }
+            .divAbout__fotoYtexto2 {
+                display: flex;
+                flex-direction: column-reverse;
+                width: auto;
+                .bgnTextoAboutSegImg {
+                    width: 240px;
+                    margin: auto;
+                    margin-top: 10px;
+                }
+                .fotoYtexto {
+                    img {
+                        width: 280px; 
+                        height: auto;
+                    }
+                }
+            }
+        }
+        .divFlecha {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            z-index: 1;
+            .flechaGoUpResponsive {
+                display: block;
+                padding: 10px;
+                margin-right: 30px;
+                margin-top: -40px;
+                margin-bottom: 15px;
+                i {
+                    color: #E6B811;
+                    font-size: 40px;
+                    padding-top: 20px;  
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:425px) and (max-width:767px) {
     .mainAbout__bgn {
         width: 100vw;
         overflow: hidden;
@@ -271,7 +348,7 @@
 
 /* VISTA TABLET 992px*/
 
-@media only screen and (max-width:992px) and (min-width: 426px) {
+@media (min-width: 768px) and (max-width:992px) {
     .mainAbout__bgn {
         overflow: hidden;
         .contenedorVideoAbout {

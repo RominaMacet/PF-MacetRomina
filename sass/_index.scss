@@ -199,8 +199,82 @@
 
 /* MEDIA QUERY */
 
-/* VISTA MOBILE 425px */
-@media only screen and (max-width:425px) {
+/* VISTA MOBILE 320px, 425px */
+
+@media (min-width:320px) and (max-width:424px) {
+    .main__index--bgn {
+        overflow: hidden;
+        .videoIndex {
+            video {
+                margin: 0;
+                padding: 0;
+                height: fit-content;
+            }
+        }
+        section {
+            .main__secciones {
+                a {
+                    padding: 10px 30px;
+                    font-size: 22px ;
+                    margin-bottom: 20px;
+                }
+            }
+            .main__img--alineacion {
+                margin-bottom: auto;
+                .sectionIndex__img--pRel {
+                    width: auto;
+                    .imgSectionIndex {
+                        width: 250px;
+                        height: auto;
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        section {
+            .section__CyP {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .carousel--size {
+                    width: fit-content;
+                    height: fit-content;
+                    .carousel-indicators {
+                        width: auto;
+                    }
+                   .carousel-inner {
+                    .carousel--imgSize {
+                       img {
+                        width: auto;
+                        height: 350px;
+                       }
+                    }
+
+                   }
+                }
+                .section__about {
+                    width: 250px;
+                    margin: auto;
+                }
+            }
+            .divFlecha {
+                display: flex;
+                justify-content: flex-end;
+                .flechaGoUpResponsive {
+                    display: block;
+                    margin: auto 30px 30px auto ;
+                    i {
+                        font-size: 40px;
+                        color: #E6B811;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:425px) and (max-width:767px) {
     .main__index--bgn {
         overflow: hidden;
         .videoIndex {
@@ -272,7 +346,7 @@
 }
 
 /* VISTA TABLET 992px*/
-@media only screen and (max-width:992px) and (min-width: 426px) {
+@media (min-width: 768px) and (max-width:992px) {
     .main__index--bgn {
         .videoIndex {
             video {
@@ -313,3 +387,6 @@
         }
     }
 }
+
+
+

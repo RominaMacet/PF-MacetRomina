@@ -163,11 +163,85 @@
   }
 }
 
+
 /* Media Query*/
 
-/* VISTA MOBILE 425px */
+/* VISTA MOBILE 320px y 425px */
 
-@media only screen and (max-width:425px) {
+@media (min-width:320px) and (max-width:424px) {
+    .header--grid {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .responsiveDisplayNone {
+            display: none;
+        }
+        .header__centro {
+            width:300px;
+            margin: auto;
+            .parpadeo {
+                .header__logo {
+                    width: 150px;
+                    height: 100px;
+                    animation:  5s linear 0s infinite alternate logoBackNForth320;
+                    margin: auto;
+                }
+            }
+            .header__enunciado {
+                font-size: 25px;
+                text-align: center;
+                margin: 10px 50px;
+            }
+            .navResponsive {
+                display: block;
+                display: flex;
+                margin: auto;
+                nav {
+                    margin: auto;
+                    position: relative;
+                    .dropdown {
+                        .nav__btn--color {
+                            padding: 8px 10px;
+                            width: auto;
+                        }
+                    }
+                }
+                .div__headerBtnAcc {
+                    margin: auto;
+                    .header__btnsAccesorios {
+                        align-items: baseline;
+                        li {
+                            padding: 8px;
+                            a {
+                                p {
+                                    display: none;
+                                }
+                                i {
+                                    position: relative;
+                                    right: -4px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+/*Animaciones V. Mobile 320px*/
+@keyframes logoBackNForth320 {
+    from {
+        transform: translateX(-12vw);
+        
+      }
+      to {
+        transform: translateX(12vw);
+      }
+}
+
+@media (min-width:425px) and (max-width:767px) {
     .header--grid {
         .responsiveDisplayNone {
           display: none;
@@ -225,7 +299,7 @@
     }
 }
 
-/*Animaciones V. Mobile*/
+/*Animaciones V. Mobile 425px*/
 @keyframes logoBackNForth425 {
     from {
         transform: translateX(-12vw);

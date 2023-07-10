@@ -100,9 +100,66 @@
 
 /* MEDIA QUERY */
 
-/* VISTA MOBILE 425px */
+/* VISTA MOBILE 320px, 425px */
 
-@media only screen and (max-width:425px) {
+@media (min-width:320px) and (max-width:424px) {
+    .mainShop--bgn {
+        overflow: hidden;
+        .div__mainTitulo {
+            h2 {
+                padding: 10px 100px;
+                font-size: 25px;
+            }
+        }
+        .dropdown {
+            margin: auto;
+            width: auto;
+            margin-left: 15px;
+            .btn--bgnColor {
+                font-size: 15px;
+            }
+        }
+        div {
+            div {
+                .div__mainTitulosChicos {
+                    h3 {
+                        padding: 10px 50px;
+                        font-size: 20px;
+                    }
+                }
+                .flexCards {
+                    display: flex;
+                    flex-direction: column;
+                    .card {
+                        margin: auto;
+                        margin-bottom: 20px;
+                        width: 200px;
+                    }
+                }
+                .mBCResp {
+                    margin-bottom: 20px;
+                }
+            }
+            .merchEspacioBottom {
+                margin-bottom: 60px;
+            }
+        }
+        .divFlecha {
+            display: flex;
+            justify-content: flex-end;
+            .flechaGoUpResponsive {
+                display: block;
+                margin: auto 30px 30px auto ;
+                i {
+                    font-size: 40px;
+                    color: #E6B811;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:425px) and (max-width:767px) {
     .mainShop--bgn {
         overflow: hidden;
         .div__mainTitulo {
@@ -161,7 +218,7 @@
     
 /* VISTA TABLET 992px*/
 
-@media only screen and (max-width:992px) and (min-width: 426px) {
+@media (min-width: 768px) and (max-width:992px)  {
     .mainShop--bgn {
         overflow: hidden;
         .div__mainTitulo {

@@ -200,9 +200,73 @@
 
 /* MEDIA QUERY */
 
-/* VISTA MOBILE 425px */
+/* VISTA MOBILE 320px, 425px */
 
-@media only screen and (max-width:425px) {
+@media (min-width:320px) and (max-width:424px) {
+    .mainContacto__bgrn {
+        overflow: hidden;
+        .section1Contacto {
+            display: flex;
+            flex-direction: column;
+            margin: auto;
+            align-items: center;
+            img {
+                width: 280px;
+                height: 350px;
+            }
+            .contacto__enlaces--ubicación {
+                margin: auto;
+            }
+        }
+        .section2Contacto {
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            .section2Contacto__div {
+                margin: auto;
+            }
+            img {
+                width: 250px;
+                height: auto;
+                margin: auto;
+                margin-top: 60px;
+            }
+        }
+        .section3Contacto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            iframe {
+                width: auto;
+            }
+            .textoSection3Contacto {
+                width: 280px;
+                margin: auto;
+                margin-top: 15px;
+            }
+        }
+        .divFlecha {
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+            z-index: 1;
+            .flechaGoUpResponsive {
+                display: block;
+                padding: 10px;
+                margin-right: 30px;
+                margin-top: -40px;
+                margin-bottom: 15px;
+                i {
+                    color: #E6B811;
+                    font-size: 40px;
+                    padding-top: 20px;  
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:425px) and (max-width:767px) {
     .mainContacto__bgrn {
         width: 100vw;
         overflow: hidden;
@@ -276,7 +340,7 @@
 
 /* VISTA TABLET 992px*/
 
-@media only screen and (max-width:992px) and (min-width: 426px) {
+@media (min-width: 768px) and (max-width:992px) {
     .mainContacto__bgrn {
         overflow: hidden;
         .section1Contacto {
