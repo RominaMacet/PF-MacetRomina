@@ -277,20 +277,19 @@ header, body {
     margin: 10px 50px;
   }
   .header--grid .header__centro .navResponsive {
-    display: block;
+    display: inline-block;
     display: flex;
     margin: auto;
+    justify-content: space-between;
+    align-items: center;
   }
   .header--grid .header__centro .navResponsive nav {
     margin: auto;
     position: relative;
   }
-  .header--grid .header__centro .navResponsive nav .dropdown .nav__btn--color {
-    padding: 8px 10px;
-    width: auto;
-  }
   .header--grid .header__centro .navResponsive .div__headerBtnAcc {
     margin: auto;
+    margin-right: -13px;
   }
   .header--grid .header__centro .navResponsive .div__headerBtnAcc .header__btnsAccesorios {
     align-items: baseline;

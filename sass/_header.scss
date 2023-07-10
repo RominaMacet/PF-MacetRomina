@@ -193,21 +193,18 @@
                 margin: 10px 50px;
             }
             .navResponsive {
-                display: block;
+                display: inline-block;
                 display: flex;
                 margin: auto;
+                justify-content: space-between;
+                align-items: center;
                 nav {
                     margin: auto;
                     position: relative;
-                    .dropdown {
-                        .nav__btn--color {
-                            padding: 8px 10px;
-                            width: auto;
-                        }
-                    }
                 }
                 .div__headerBtnAcc {
                     margin: auto;
+                    margin-right: -13px;
                     .header__btnsAccesorios {
                         align-items: baseline;
                         li {
