@@ -201,7 +201,7 @@
 
 /* VISTA MOBILE 320px, 425px */
 
-@media (min-width:320px) and (max-width:424px) {
+@media (min-width:320px) and (max-width:375px) {
     .main__index--bgn {
         overflow: hidden;
         .videoIndex {
@@ -214,18 +214,22 @@
         section {
             .main__secciones {
                 a {
-                    padding: 10px 30px;
+                    padding: 10px 70px;
                     font-size: 22px ;
                     margin-bottom: 20px;
                 }
             }
             .main__img--alineacion {
                 margin-bottom: auto;
+                display: flex;
+                flex-direction: column;
+                margin: auto;
+                justify-content: center;
                 .sectionIndex__img--pRel {
-                    width: auto;
                     .imgSectionIndex {
                         width: 250px;
                         height: auto;
+                        margin: auto;
                         margin-bottom: 20px;
                     }
                 }
@@ -274,7 +278,7 @@
 }
 
 
-@media (max-width:425px) {
+@media (min-width:425px) and (max-width:576px) {
     .main__index--bgn {
         overflow: hidden;
         .videoIndex {

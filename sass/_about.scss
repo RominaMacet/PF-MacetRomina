@@ -175,7 +175,7 @@
 
 /* VISTA MOBILE 320px, 425px */
 
-@media (min-width:320px) and (max-width:424px) {
+@media (min-width:320px) and (max-width:375px) {
     .mainAbout__bgn {
         overflow: hidden;
         .contenedorVideoAbout {
@@ -252,7 +252,7 @@
     }
 }
 
-@media (max-width:425px)  {
+@media (min-width:425px) and (max-width:576px)  {
     .mainAbout__bgn {
         width: 100vw;
         overflow: hidden;

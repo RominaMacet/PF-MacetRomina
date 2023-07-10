@@ -168,7 +168,7 @@
 
 /* VISTA MOBILE 320px y 425px */
 
-@media (min-width:320px) and (max-width:424px) {
+@media (min-width:320px) and (max-width:375px) {
     .header--grid {
         display: flex;
         flex-direction: column;
@@ -177,7 +177,7 @@
             display: none;
         }
         .header__centro {
-            width:300px;
+            width:auto;
             margin: auto;
             .parpadeo {
                 .header__logo {
@@ -188,7 +188,7 @@
                 }
             }
             .header__enunciado {
-                font-size: 25px;
+                font-size: 20px;
                 text-align: center;
                 margin: 10px 50px;
             }
@@ -201,10 +201,15 @@
                 nav {
                     margin: auto;
                     position: relative;
+                    .dropdown {
+                        .nav__btn--color {
+                            padding: 8px 10px;
+                            width: auto;
+                        }
+                    }
                 }
                 .div__headerBtnAcc {
                     margin: auto;
-                    margin-right: -13px;
                     .header__btnsAccesorios {
                         align-items: baseline;
                         li {
@@ -238,7 +243,7 @@
       }
 }
 
-@media (max-width:425px)  {
+@media (min-width:425px) and (max-width:576px)  {
     .header--grid {
         .responsiveDisplayNone {
           display: none;

@@ -102,7 +102,7 @@
 
 /* VISTA MOBILE 320px, 425px */
 
-@media (min-width:320px) and (max-width:424px) {
+@media (min-width:320px) and (max-width:375px) {
     .mainShop--bgn {
         overflow: hidden;
         .div__mainTitulo {
@@ -159,7 +159,7 @@
     }
 }
 
-@media (max-width:425px)  {
+@media (min-width:425px) and (max-width:576px) {
     .mainShop--bgn {
         overflow: hidden;
         .div__mainTitulo {

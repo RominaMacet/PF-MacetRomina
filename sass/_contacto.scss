@@ -202,7 +202,7 @@
 
 /* VISTA MOBILE 320px, 425px */
 
-@media (min-width:320px) and (max-width:424px) {
+@media (min-width:320px) and (max-width:375px) {
     .mainContacto__bgrn {
         overflow: hidden;
         .section1Contacto {
@@ -266,7 +266,7 @@
     }
 }
 
-@media (max-width:425px)  {
+@media (min-width:425px) and (max-width:576px) {
     .mainContacto__bgrn {
         width: 100vw;
         overflow: hidden;
